@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/81d6beea17.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script type="text/javascript" src="Javascript/Script1.js"></script>
+    <script type="text/javascript" src="Javascript/JQuerry.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <div id="menu">
+        <div>
+            <p><h3>Our Menu</h3> </p>
+        </div>
+        <div id="myBtn_Container">
+            <div class=" container">
+                <ul>
+                    <li><button class="menu_li active" onclick="filterSelection('all')"> All </button></li>
+                    <li><button class="menu_li" onclick="filterSelection('burger')"> Burger </button></li>
+                    <li><button class="menu_li" onclick="filterSelection('pizza')"> Pizza </button></li>
+                    <li><button class="menu_li" onclick="filterSelection('pasta')"> Pasta </button></li>
+                    <li><button class="menu_li" onclick="filterSelection('fries')"> Fries </button></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 hide pizza">
+                        <div class="select_food ">
+                            <div class="background_img">
+                                <img src="Images/f1.png" class="pizzaIMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Pizza
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$20</span>
+                                    <span class="menu_right"><a href="#"><i class="fa fa-cart-shopping icon" aria-hidden="true"></i></a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide  burger">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f2.png" class="burgerIMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Burger
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$15</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide pizza">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f3.png" class="pizza2IMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Pizza
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$17</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 hide pasta">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f4.png" class="pastaIMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Pasta
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$18</span>
+                                    <span class="menu_right"><a href="#"><i class="fa fa-cart-shopping icon" aria-hidden="true"></i></a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide fries">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f5.png" class="friesIMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    French Fries
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$10</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide pizza">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f6.png" class="pizza2IMG" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Pizza
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$15</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 hide burger">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f7.png" class="img_3" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Tasty Burger
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$12</span>
+                                    <span class="menu_right"><a href="#"><i class="fa fa-cart-shopping icon" aria-hidden="true"></i></a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide burger">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f8.png" class="img_3" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Tasty Burger
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$14</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hide pasta">
+                        <div class="select_food">
+                            <div class="background_img">
+                                <img src="Images/f9.png" class="img_3" />
+                            </div>
+                            <div class="text_left">
+                                <h4>
+                                    Delicious Pasta
+                                </h4>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                                </p>
+                                <p>
+                                    <span class="menu_left">$10</span>
+                                    <span class="menu_right"> <a href="#"> <i class="fa fa-cart-shopping icon" aria-hidden="true"></i> </a> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("col-md-4");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("myBtn_Container");
+        var btns = btnContainer.getElementsByClassName("menu_li");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
+</body>
+</html>
